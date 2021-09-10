@@ -1,29 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
 body {
-    font-family: 'Amatic SC' ,Impact, 'Arial Narrow Bold', sans-serif;
-    background-size: cover;
-    background-image: url(images/RamonPhotoCity.jpeg);
-    height: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  font-family: "Amatic SC", Impact, "Arial Narrow Bold", sans-serif;
+  background-size: cover;
+  background-image: url(images/RamonPhotoCity.jpeg);
+  height: 100%;
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
-    color: #CCFFE6;
+  color: #ccffe6;
 }
 
 .name {
-    font-size: 100px;
-    margin-top: 10px;
-    margin-bottom: .10em;
-
+  font-size: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0.1em;
 }
 
 .flex-container h2 {
-    font-size: 50px;
-    color: #CCFFE6;
-    margin-top: 0;
-    opacity: 50%;
+  font-size: 50px;
+  color: #ccffe6;
+  margin-top: 0;
+  margin-left: 10px;
+  opacity: 50%;
+}
+
+/* added text-align center to horizontally center all my images
+within the div */
+.images {
+  display:flow-root;
+  text-align: center;
+  /* margin-left: 7%; */
+  margin-top: 5%;
+  width: 100%;
+}
+
+/* divided the three images by 100 to fill 
+the screen side by side minus padding*/
+.image {
+  width: auto;
+  max-width: 30%;
+ 
+  height: auto;
+ 
+  /* Did only right padding so when images collapse
+  there is = margins on both sides of the images */
+  padding: 0px 5px 0px 0px;
+}
+
+/* added @media for mobile response
+if screen is smaller than 768px
+images collapse and fill the screen at 100% width */
+@media only screen and (max-width: 768px) {
+  [class*="image-"] {
+    min-width: 100%;
+  }
+  [class="images"]{
+      margin-left: 0px;
+  }
 }
