@@ -29,26 +29,19 @@ h1 {
   opacity: 50%;
 }
 
-/* added text-align center to horizontally center all my images
-within the div */
-.images {
-  display:flow-root;
-  text-align: center;
-  /* margin-left: 7%; */
-  margin-top: 5%;
-  width: 100%;
-}
 
+
+.images {
+  /* display: flexbox; */
+  margin-top: 5%;
+ 
+}
 /* divided the three images by 100 to fill 
 the screen side by side minus padding*/
 .image {
   width: auto;
   max-width: 30%;
- 
   height: auto;
- 
-  /* Did only right padding so when images collapse
-  there is = margins on both sides of the images */
   padding: 0px 5px 0px 0px;
 }
 
