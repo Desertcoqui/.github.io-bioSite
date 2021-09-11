@@ -51,7 +51,19 @@ width:33%;
   height: auto;
   padding: 0px 5px 0px 0px;
 }
-
+/* Font styling under photos */
+.imageList li h3 {
+    font-size: 50px;
+    color: white;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
 /* added @media for mobile response
 if screen is smaller than 1024px
 images collapse and fill the screen at 100% width */
