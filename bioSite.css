@@ -29,30 +29,38 @@ h1 {
   opacity: 50%;
 }
 
-
-
-.images {
-  /* display: flexbox; */
-  margin-top: 5%;
- 
+/* Parent element is 100 width */
+.imageList {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
 }
-/* divided the three images by 100 to fill 
-the screen side by side minus padding*/
+
+/* 100 divided by three images to fit inline across
+the screen */
+.imageList li {
+    display:inline-block;
+width:33%;
+}
+
+/* images fit 100% of its parent element li*/
 .image {
-  width: auto;
-  max-width: 30%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 0px 5px 0px 0px;
 }
 
 /* added @media for mobile response
-if screen is smaller than 768px
+if screen is smaller than 1024px
 images collapse and fill the screen at 100% width */
-@media only screen and (max-width: 768px) {
-  [class*="image-"] {
-    min-width: 100%;
-  }
-  [class="images"]{
-      margin-left: 0px;
-  }
+@media only screen and (max-width: 1024px) {
+
+    .imageList li{
+        width: 100%;
+        /* display:flow-root; */
+    }
+    
+  
 }
