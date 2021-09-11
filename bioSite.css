@@ -27,6 +27,7 @@ h1 {
   margin-top: 0;
   margin-left: 10px;
   opacity: 50%;
+  margin-bottom: 5px;
 }
 
 /* Parent element is 100 width */
@@ -42,6 +43,7 @@ the screen */
 .imageList li {
     display:inline-block;
 width:33%;
+margin-top: 0px;
 }
 
 /* images fit 100% of its parent element li*/
@@ -49,12 +51,13 @@ width:33%;
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
-/* Font styling under photos */
+/* Font styling on top of photos */
 .imageList li h3 {
     font-size: 50px;
     color: white;
+    margin-bottom: 3px;
 }
 a:link{
     color: white;
