@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
 }
 
+
 h1 {
   color: #ccffe6;
 }
@@ -78,4 +79,18 @@ images collapse and fill the screen at 100% width */
     }
     
   
+}
+/* About me Page */
+
+.ramon{
+    float: left;
+    margin-right:10px;
+   
+}
+ p {
+    margin-left:0px;
+    overflow: auto;
+    display: block;
+    color: white;
+    font-size: 30px;
 }
