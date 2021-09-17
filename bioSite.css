@@ -11,7 +11,7 @@ body {
 }
 
 
-h1 {
+h1  {
   color: #ccffe6;
 }
 
@@ -20,6 +20,8 @@ h1 {
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 0.1em;
+  color: #ccffe6;
+
 }
 
 .flex-container h2 {
@@ -93,7 +95,16 @@ images collapse and fill the screen at 100% width */
     display: block;
     color: white;
     font-size: 30px;
+    min-width: 554px;
 }
 .red{
     color: red;
+}
+
+a:link {
+  margin-bottom: 20px;
+  font-size: 25px;
+  align-items: center;
+  
+  
 }
