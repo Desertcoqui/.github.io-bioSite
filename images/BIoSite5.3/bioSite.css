@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+body {
+  font-family: "Amatic SC", Impact, "Arial Narrow Bold", sans-serif;
+  background-size: cover;
+  background-image: url(images/RamonPhotoCity.jpeg);
+  height: 100%;
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+h1 {
+  color: #ccffe6;
+}
+
+.name {
+  font-size: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0.1em;
+}
+
+.flex-container h2 {
+  font-size: 50px;
+  color: #ccffe6;
+  margin-top: 0;
+  margin-left: 10px;
+  opacity: 50%;
+  margin-bottom: 5px;
+}
+
+/* Parent element is 100 width */
+.imageList {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+}
+
+/* 100 divided by three images to fit inline across
+the screen */
+.imageList li {
+    display:inline-block;
+width:33%;
+margin-top: 0px;
+}
+
+/* images fit 100% of its parent element li*/
+.image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+/* Font styling on top of photos */
+.imageList li h3 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 3px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+/* added @media for mobile response
+if screen is smaller than 1024px
+images collapse and fill the screen at 100% width */
+@media only screen and (max-width: 1024px) {
+
+    .imageList li{
+        width: 100%;
+        /* display:flow-root; */
+    }
+    
+  
+}
+/* About me Page */
+
+.ramon{
+    float: left;
+    margin-right:10px;
+   
+}
+ p {
+    margin-left:0px;
+    overflow: auto;
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+.red{
+    color: red;
+}
