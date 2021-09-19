@@ -8,20 +8,32 @@ body {
   /* overflow: hidden; */
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #ccffe6;
 }
 
 
-h1  {
+.navLinks {
+list-style: none;
+display: flex;
+justify-content: space-around;
+background-color: black;
+border: 10px solid rgb(214, 201, 141);
+padding:20px;
+
+}
+
+
+h1,
+h2 {
   color: #ccffe6;
 }
 
 .name {
   font-size: 100px;
-  margin-top: 10px;
-  margin-left: 10px;
+  /* margin-top: 10px;
+  margin-left: 10px; */
   margin-bottom: 0.1em;
   color: #ccffe6;
-
 }
 
 .flex-container h2 {
@@ -35,76 +47,108 @@ h1  {
 
 /* Parent element is 100 width */
 .imageList {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 100%;
-    padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+  padding: 0;
 }
 
 /* 100 divided by three images to fit inline across
 the screen */
 .imageList li {
-    display:inline-block;
-width:33%;
-margin-top: 0px;
+  display: inline-block;
+  width: 33%;
+  margin-top: 0px;
 }
 
-/* images fit 100% of its parent element li*/
-.image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  padding: 0px 0px 0px 0px;
-}
+
+
 /* Font styling on top of photos */
 .imageList li h3 {
-    font-size: 50px;
-    color: white;
-    margin-bottom: 3px;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 3px;
 }
-a:link{
-    color: white;
-    text-decoration: none;
+a:link {
+  color: white;
+  text-decoration: none;
 }
-a:visited{
-    color: white;
-    text-decoration: none;
+a:visited {
+  color: white;
+  text-decoration: none;
 }
 /* added @media for mobile response
 if screen is smaller than 1024px
 images collapse and fill the screen at 100% width */
 @media only screen and (max-width: 1024px) {
-
-    .imageList li{
-        width: 100%;
-        /* display:flow-root; */
-    }
-    
-  
+  .imageList li {
+    width: 100%;
+    /* display:flow-root; */
+  }
 }
 /* About me Page */
 
-.ramon{
-    float: left;
-    margin-right:10px;
-   
+.ramon {
+  float: left;
+  margin-right: 10px;
 }
- p {
-    margin-left:0px;
-    overflow: auto;
-    display: block;
-    color: white;
-    font-size: 30px;
-    min-width: 554px;
+p  {
+  margin-left: 0px;
+  overflow: auto;
+  display: block;
+  color: white;
+  font-size: 30px;
+  min-width: 554px;
 }
-.red{
-    color: red;
+/* images fit 100% of its parent element li*/
+.image  {
+  /* width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+.red {
+  color: red;
 }
 
 a:link {
   margin-bottom: 20px;
   font-size: 25px;
   align-items: center;
-  
-  
+}
+
+#caption  {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    /* position: absolute; */
+    right: 0px;
+    height: 4vh;
+    top: 8vh;
+    flex-direction:row;
+    align-items: center;
+    /* width: 50%; */
+    /* moves Nav bar off main screen to the right */
+    /* transform: translateX(100%); */
+  }
+  h1 {
+    margin: 10px;
+  }
+  h3 {
+    margin-top: ;
+  }
 }
