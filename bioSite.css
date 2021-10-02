@@ -11,17 +11,23 @@ body {
   color: #ccffe6;
 }
 
-
+nav {
+  width:auto;
+}
 .navLinks {
 list-style: none;
 display: flex;
 justify-content: space-around;
 background-color: black;
 border: 10px solid rgb(214, 201, 141);
-padding:20px;
+padding:12px;
 
 }
 
+.navLinks a {
+  margin: 15px;
+  display: inline-block;
+}
 
 h1,
 h2 {
@@ -57,7 +63,7 @@ h2 {
 the screen */
 .imageList li {
   display: inline-block;
-  width: 33%;
+  width: 30%;
   margin-top: 0px;
 }
 
@@ -68,6 +74,7 @@ the screen */
   font-size: 50px;
   color: white;
   margin-bottom: 3px;
+  text-align: center;
 }
 a:link {
   color: white;
@@ -81,16 +88,21 @@ a:visited {
 if screen is smaller than 1024px
 images collapse and fill the screen at 100% width */
 @media only screen and (max-width: 1024px) {
-  .imageList li {
+ 
+  .imageList li  {
     width: 100%;
     /* display:flow-root; */
   }
+
 }
 /* About me Page */
 
 .ramon {
   float: left;
   margin-right: 10px;
+  max-width: 80%;
+  border: 10px solid rgb(214, 201, 141);
+
 }
 p  {
   margin-left: 0px;
@@ -98,16 +110,17 @@ p  {
   display: block;
   color: white;
   font-size: 30px;
-  min-width: 554px;
+  min-width: 400px;
 }
-/* images fit 100% of its parent element li*/
+
 .image  {
   /* width: 100%; */
   display: block;
+  border: 10px solid rgb(214, 201, 141);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   padding: 0px 0px 0px 0px;
 }
@@ -127,11 +140,22 @@ a:link {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   padding: 0px 0px 0px 0px;
 }
 
+.para p {
+  margin: 15px;
+  overflow: auto;
+  display: block;
+  color: rgb(248, 241, 241);
+  background-color: black;
+  font-size: 30px;
+  
+  max-width: 80%;
+
+}
 
 @media screen and (max-width: 768px) {
   .navLinks {
@@ -142,8 +166,6 @@ a:link {
     flex-direction:row;
     align-items: center;
     /* width: 50%; */
-    /* moves Nav bar off main screen to the right */
-    /* transform: translateX(100%); */
   }
   h1 {
     margin: 10px;
