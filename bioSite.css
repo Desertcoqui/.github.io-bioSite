@@ -24,6 +24,7 @@ position: fixed;
 top:0;
 right:0;
 left:0;
+/* Had to delete width so nav boarder would show on right side */
 /* width:90%; */
 margin-right: 0px;
 margin-bottom: 5px;
