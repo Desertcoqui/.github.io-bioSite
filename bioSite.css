@@ -37,6 +37,9 @@ text-align: center;
   display: inline-block;
   float:left;
 }
+.navLinks a:hover{
+  font-size: 4em;
+}
 
 h1,
 h2 {
@@ -68,6 +71,9 @@ h2 {
   padding: 0;
 }
 
+.imageList a:hover{
+  font-size: 1em;
+}
 /* 100 divided by three images to fit inline across
 the screen */
 .imageList li {
